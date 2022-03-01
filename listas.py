@@ -81,5 +81,3 @@ def exercicio_7():
     lst = lista_str
 
     print(lst)
-
-exercicio_7()
