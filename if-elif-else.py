@@ -61,10 +61,6 @@ def exercicio_5():
 
     if "-" in placa:
         partes = placa.split("-")     
-        if len(partes[0]) == 3 and len(partes[1]) == 4:
-            print(partes[0].isalpha() and partes[1].isdigit())
-        else:
-            print(False)    
+        print(len(partes[0]) == 3 and len(partes[1]) == 4 and partes[0].isalpha() and partes[1].isdigit())
     else:
         print(False) 
-
