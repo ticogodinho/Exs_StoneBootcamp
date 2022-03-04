@@ -12,12 +12,13 @@ def desafio_1():
                                 # 1 e 100, mas incluí pq não acho que tenha sido essa a intenção (tbm n incluí 
                                 # os decimais, pelo msm motivo...)
     
-        num_sorte = 0
-        while num_sorte < 1 or num_sorte > 100:
-            num_sorte = int(input("Digite um numero inteiro entre 1 e 100 (inclusos 1 e 100): "))
-
+        num_sorte = int(input("Digite um numero inteiro entre 1 e 100 (inclusos 1 e 100): "))
         tentativas = 1
+        
         while num_ale != num_sorte:
+            while num_sorte < 1 or num_sorte > 100:
+            num_sorte = int(input("Digite um numero inteiro entre 1 e 100 (inclusos 1 e 100): "))
+            
             if num_ale > num_sorte:
                 print("\nO número sorteado é maior que o digitado...")
                 num_sorte = int(input("Tente denovo: "))
